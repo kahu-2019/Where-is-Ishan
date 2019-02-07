@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Buttons from './Buttons'
@@ -8,7 +8,9 @@ const App = () => {
   return (
     <Router>
       <div className='main'>
-        <h1>Where is Ishan?</h1>
+        <header>
+          <h1>Where is Ishan?</h1>
+        </header>
         <Image />
         <Buttons />
 

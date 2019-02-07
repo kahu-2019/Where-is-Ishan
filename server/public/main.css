@@ -1,3 +1,35 @@
-.main{
-  background-color: aqua;
+/* grid layout */
+
+.main{ 
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Verdana, sans-serif;
+  display: grid;
+  grid-template: '. header .' 10vh
+                '. image .' 60vh
+                '. buttons .' 30vh
+                /5% 90% 5%;
+  /* this method is a shortcut called named grid-template areas */
+}
+
+header{
+  grid-area: header;
+  width: 100vw
+}
+
+.image{
+  grid-area: image;
+  width: 100vw;
+  height: 100vh;
+}
+
+.buttons{
+  grid-area: buttons;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Typography */
+h1{
+  text-align: center;
+  text-transform: uppercase;
 }
