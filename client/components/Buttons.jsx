@@ -8,9 +8,9 @@ class Buttons extends React.Component{
   render(){
     return(
       <Fragment>
-        <div className='button-container'>
-
-        </div>
+        <button>
+          placeholder name
+        </button>
       </Fragment>
     )
   }

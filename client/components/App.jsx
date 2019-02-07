@@ -12,7 +12,13 @@ const App = () => {
           <h1>Where is Ishan?</h1>
         </header>
         <Image />
-        <Buttons />
+        <div className='button-container'>
+          <Buttons id="1"/>
+          <Buttons id="2"/>
+          <Buttons id="3"/>
+          <Buttons id="4"/>
+        </div>
+        
 
       </div >
     </Router>

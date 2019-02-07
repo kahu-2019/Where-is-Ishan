@@ -6,3 +6,13 @@ apiImgReq = `https://maps.googleapis.com/maps/api/staticmap?center=${latLong}&${
 randy = () => {
 	return rand = Math.floor(Math.random() * 10) + 1  
 }
+
+export function getPlaceName(randy){
+	return request.get('/api')
+	.then(
+		res => {
+			console.log(res.body)
+			return res.body
+		}
+	)
+}
