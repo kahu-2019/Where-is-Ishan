@@ -1,0 +1,25 @@
+satellite
+terrain
+style=feature:poi|visibility:off
+
+https://maps.googleapis.com/maps/api/staticmap?center=New+york,NY&zoom=13&size=300x200&maptype=roadmap%20&markers=color:red%7CNew+york,NY&format=png&style=feature:all|element:labels|visibility:off
+
+
+
+https://maps.googleapis.com/maps/api/staticmap?center=New+york,NY
+&zoom=13
+&size=300x200
+&maptype=terrain%20
+&format=png
+&style=feature:all|element:labels|visibility:off
+&key=AIzaSyAHciFTN54JS1w-iheiqpAN47wvNbx889I
+
+https://maps.googleapis.com/maps/api/staticmap?center=New+york,NY&zoom=13&size=300x200&maptype=terrain%20&format=png&style=feature:all|element:labels|visibility:off&key=AIzaSyAHciFTN54JS1w-iheiqpAN47wvNbx889I
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1228601.8020335548!2d20.177492395021275!3d24.302282349852046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13883b64fb267151%3A0xd6406bdc582d7390!2sSahara+Desert!5e1!3m2!1sen!2snz!4v1549574354242" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+Sahara
+https://maps.googleapis.com/maps/api/staticmap?center=25.1933335,20.3346999&zoom=7&scale=1&size=600x300&maptype=satellite&format=png&visual_refresh=true&key=AIzaSyAHciFTN54JS1w-iheiqpAN47wvNbx889I
+
