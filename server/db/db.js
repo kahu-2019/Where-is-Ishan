@@ -7,5 +7,5 @@ module.exports = {
 }
 
 function getPlaceName(){
-  return db('locations').whereIn()
+  return db('locations').whereIn('id')
 }
