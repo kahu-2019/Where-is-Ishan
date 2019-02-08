@@ -27,8 +27,6 @@ class App extends React.Component {
           <Buttons />
           
         </div>
-        
-
       </div >
     </Router>
     
