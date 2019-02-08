@@ -4,22 +4,23 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 import Buttons from './Buttons'
 import Image from './Image'
 
-import {getPlaceName} from '../api/apiRoute'
- //TODO 
+import {getPlaceFull} from '../api/apiRoute'
 
-const App = () => {
-
-  function runFunctions(){
-    getPlaceName()
-    getPlaceFull()
-    
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+    }
   }
-  return (
+
+    
+  render(){
+     return (
     <Router>
       <div className='main'>
         <header>
           <h1>Where is Ishan?</h1>
-          <button onClick={runFunctions}>Randomize</button>
+          <button>Randomize</button>
         </header>
         <Image />
         <div className='button-container'>
@@ -32,6 +33,8 @@ const App = () => {
     </Router>
     
   )
+  }
+ 
 }
 
 export default App
