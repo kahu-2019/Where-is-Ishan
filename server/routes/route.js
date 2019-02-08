@@ -3,12 +3,10 @@ const db = require('../db/db')
 const router = express.Router()
 
 
-router.get('/', (req,res)=>{
-  console.log(req.params)
-	db.getPlaceName(req.params.randy)
+router.post('/', (req,res)=>{
+	db.getPlaceName(req.body)
 	.then(place => {
-			console.log(place.name)
-			res.json(place.name)
+			res.json(place)
 		}
 	)
 })

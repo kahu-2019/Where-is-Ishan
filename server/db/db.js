@@ -6,6 +6,7 @@ module.exports = {
   getPlaceName
 }
 
-function getPlaceName(){
-  return db('locations').whereIn('id')
+function getPlaceName(randy){
+  return db('locations').whereIn('locations.id', randy)
+  .select('name')
 }

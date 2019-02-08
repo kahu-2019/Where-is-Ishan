@@ -6,13 +6,13 @@ class Buttons extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      placeArr: []
+      place: []
     }
   }
 
   componentDidMount(){
     getPlaceName().then(place => {
-     this.setState({placeArr: place})
+      this.setState({place: place})
     })
       
   }
@@ -20,9 +20,9 @@ class Buttons extends React.Component{
   render(){
     return(
       <Fragment>
-        {this.state.placeArr.map(place => {
+        {this.state.place.map(place => 
           <button>{place.name}</button>
-        })}
+        )}
       </Fragment>
     )
   }
