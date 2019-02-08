@@ -6,11 +6,14 @@ import request from 'superagent'
 // 	return rand = Math.floor(Math.random() * 10) + 1  
 // }//really helpful if it can get three numbers
 
-function generateRandomArr(truePlaceId){
+
+export function generateRandomArr(truePlaceId) {
+
 	var randy = []
-	while(randy.length < 3){
-    var r = Math.floor(Math.random()*10) + 1;
-    if(!truePlaceNum && randy.indexOf(r) === -1 ) randy.push(r);
+	while (randy.length < 3) {
+		var r = Math.floor(Math.random() * 10) + 1;
+		//changed
+		if (truePlaceId != r && randy.indexOf(r) === -1) randy.push(r);
 	}
 	randy.push(truePlaceId)
 	console.log(randy)
@@ -18,7 +21,7 @@ function generateRandomArr(truePlaceId){
 }
 
 
-export function getPlaceName(generateRandomArr){
+export function getPlaceName(generateRandomArr) {
 	return request.get('/api')
 		.then(
 			res => {
